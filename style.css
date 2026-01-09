@@ -1,0 +1,154 @@
+/* --- RESET & BASES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- HEADER --- */
+header {
+    background-color: #a0a0a0; /* Gris foncé menu */
+    padding: 20px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+nav a.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.sign-in a {
+    text-decoration: underline;
+}
+
+/* --- SECTION HERO (BANDEAU) --- */
+.hero {
+    padding: 20px;
+    width: 100%;
+}
+
+.video-placeholder {
+    background-color: #e0e0e0; /* Gris clair vidéo */
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.hero-text {
+    text-align: center;
+    z-index: 1;
+}
+
+/* --- CAROUSEL --- */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    margin: 20px 0;
+}
+
+.carousel-content {
+    display: flex;
+    background-color: #d0d0d0; /* Gris moyen */
+    width: 80%;
+    max-width: 900px;
+    min-height: 200px;
+    align-items: center;
+}
+
+.store-image {
+    background-color: #b0b0b0;
+    flex: 1;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.store-info {
+    flex: 2;
+    padding: 20px;
+    text-align: center;
+}
+
+.dotted-lines {
+    color: #555;
+    letter-spacing: 2px;
+    margin: 5px 0;
+}
+
+.store-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 3rem;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-btn:hover {
+    color: #333;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #a0a0a0;
+    margin-top: auto;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-sound {
+    font-size: 1.5rem;
+}
+
+.footer-center {
+    font-size: 1.2rem;
+}
